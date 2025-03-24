@@ -10,9 +10,9 @@ __rdflib_hdt_version__ = "3.2"
 
 def download_hdt_and_unzip():
     print("Downloading HDT...")
-    urllib.request.urlretrieve("https://github.com/rdfhdt/hdt-cpp/archive/v1.3.3.zip", "v1.3.3.zip")
+    urllib.request.urlretrieve("https://github.com/daniel-dona/hdt-cpp/archive/refs/heads/daniel-dona-patch-1.zip", "v1.3.3.zip")
     unpack_archive("v1.3.3.zip", "tmp")
-    move("tmp/hdt-cpp-1.3.3", "hdt-cpp-1.3.3")
+    move("tmp/hdt-cpp-daniel-dona-patch-1", "hdt-cpp-1.3.3")
     rmtree("tmp")
 
 download_hdt_and_unzip()
